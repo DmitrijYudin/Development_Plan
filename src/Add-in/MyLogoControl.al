@@ -10,6 +10,6 @@ controladdin MyLogoControl
     VerticalShrink = true;
     HorizontalStretch = true;
     HorizontalShrink = true;
-    StartupScript = 'scr/Add-in/JS/startupScript.js';
-    Images = 'scr/Images/bird_4.webp';
+    StartupScript = 'src/Add-in/JS/startupScript.js';
+    Images = 'src/Images/bird_4.webp';
 }
