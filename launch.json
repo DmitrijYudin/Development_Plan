@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        /*{
+            "name": "snapshotInitialize: Microsoft production cloud",
+            "type": "al",
+            "request": "snapshotInitialize",
+            "environmentType": "Production",
+            "environmentName": "Abakion_Prod",
+            "breakOnNext": "WebClient",
+            //"userId": "0de16307-cc3f-4082-aa51-73ed17a037f4",
+            //"sessionId": 4235,
+            //"snapshotVerbosity": "Full"
+        },*/
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "Microsoft cloud sandbox",
+            "startupObjectId": 70100,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+
+            // GM JCCdev Dmytro@GlobalMediatorDMY.onmicrosoft.com
+            "tenant": "5ee4a252-f918-4042-9f3b-0d02ece52809",
+            "environmentName": "DMYSandbox2",
+
+            // Abakion Prod Copy
+            // "tenant": "c004bd17-f2d6-493b-8e5e-c275adeed22f",
+            // "environmentName": "Abakion_Sandbox20221220",
+            
+            "environmentType": "Sandbox",
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "schemaUpdateMode": "Synchronize"
+        }
+    ]
+}
+

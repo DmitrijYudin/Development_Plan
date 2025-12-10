@@ -1,0 +1,15 @@
+{
+    "al.enableCodeActions": true,
+    "al.enableCodeAnalysis": true,
+    "al.codeAnalyzers": [
+        "${CodeCop}",
+        "${PerTenantExtensionCop}", //not for ISV
+        // "${AppSourceCop}",
+        "${UICop}" 
+    ],
+    // "CRS.ObjectNamePrefix": "DMY",
+    // "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    // "CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    // "CRS.OnSaveAlFileAction": "Rename",
+    // "alVarHelper.ignoreALPrefix": "DMY"
+}
