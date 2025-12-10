@@ -10,10 +10,15 @@ controladdin ShowHTML
     VerticalShrink = true;
 
     event ControlAddInReady();
+    event AddInClicked(MessageText: Text);
+
     procedure AddPictureFromUrl(picturePath: Text; pictureSize: Text);
     procedure AddPictureFromBase64(pictureBase64: Text; pictureSize: Text);
 
     procedure BuildHTML(html: Text);
     procedure AppendHTMLDefault(elementText: Text);
     procedure AppendHTML(elementId: Text; elementText: Text);
+
+    procedure ShowTwoTexts(firstName: Text; lastName: Text);
+    procedure SetHtml(HtmlText: Text);
 }
