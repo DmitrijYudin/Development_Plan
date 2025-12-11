@@ -37,9 +37,9 @@ page 50120 "ShowHTML Demo"
                 begin
                     // CurrPage.HtmlBox.ShowTwoTexts('John', 'Doe');
                     CurrPage.HtmlBox.SetHtml(
-                    '<span style="color:red;">Red</span> ' +
-                    '<span style="color:green;">Green</span> ' +
-                    '<span style="color:blue;">Blue</span>'
+                        '<span style="color:red;">Red</span> ' +
+                        '<span style="color:green;">Green</span> ' +
+                        '<span style="color:blue;">Blue</span>'
                     );
                 end;
             }
