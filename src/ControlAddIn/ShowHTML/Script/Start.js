@@ -1,1 +1,2 @@
-Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('ControlAddInReady','');
+InitializeControlAddIn();
+Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('ControlAddInReady', []);

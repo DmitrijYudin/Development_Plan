@@ -1,8 +1,8 @@
 controladdin ShowHTML
 {
-    Scripts = 'src/ControlAddin/ShowHTML/Script/Script.js';
-    StartupScript = 'src/ControlAddin/ShowHTML/Script/Start.js';
-    StyleSheets = 'src/ControlAddin/ShowHTML/StyleSheet/Default.css';
+    Scripts = 'src/ControlAddIn/ShowHTML/Script/Script.js';
+    StartupScript = 'src/ControlAddIn/ShowHTML/Script/Start.js';
+    StyleSheets = 'src/ControlAddIn/ShowHTML/StyleSheet/Default.css';
 
     HorizontalStretch = true;
     HorizontalShrink = true;

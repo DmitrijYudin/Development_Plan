@@ -14,6 +14,7 @@ page 50120 "ShowHTML Demo"
 
                 trigger ControlAddInReady()
                 begin
+                    AddInIsReady := true;
                     CurrPage.HtmlBox.SetHtml('<b>Add-in loaded</b>');
                 end;
 
@@ -32,10 +33,11 @@ page 50120 "ShowHTML Demo"
             action(Test)
             {
                 ApplicationArea = All;
+                Caption = 'Show Colored HTML';
 
                 trigger OnAction()
                 begin
-                    // CurrPage.HtmlBox.ShowTwoTexts('John', 'Doe');
+                    EnsureAddInReady();
                     CurrPage.HtmlBox.SetHtml(
                         '<span style="color:red;">Red</span> ' +
                         '<span style="color:green;">Green</span> ' +
@@ -43,7 +45,27 @@ page 50120 "ShowHTML Demo"
                     );
                 end;
             }
+
+            action(ShowCustomerName)
+            {
+                ApplicationArea = All;
+                Caption = 'Show Two Texts';
+
+                trigger OnAction()
+                begin
+                    EnsureAddInReady();
+                    CurrPage.HtmlBox.ShowTwoTexts('John', 'Doe');
+                end;
+            }
         }
     }
 
+    local procedure EnsureAddInReady()
+    begin
+        if not AddInIsReady then
+            Error('The control add-in is not ready yet. Wait a moment and try again.');
+    end;
+
+    var
+        AddInIsReady: Boolean;
 }
